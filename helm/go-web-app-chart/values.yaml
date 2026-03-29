@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: g4vdev/go-web-app
-  tag: "V1"
+  tag: "23703865070"
   pullPolicy: IfNotPresent 
 
 ingress:
