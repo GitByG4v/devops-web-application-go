@@ -1,90 +1,44 @@
-<Docktype html>
-<html>
-    <head>
-        <title>About</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
-
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
-
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-            main {
-                padding: 20px;
-            }
-
-            section {
-                margin-bottom: 20px;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <h1>About the Author</h1>
-                <p>Hi Everyone, My name is Abhishek and welcome to my channel :)</p>
-
-                    <p>    I am an opensource enthusiast and a great believer in sharing knowledge. </p>
-                        <p>  I have my footprints in popular opensource projects like Argo CD, Argo CD Operator, Argo Rollouts Manager, GitOps Operator, F5 Ingress Controller, Nginx Ingress Controller by Nginx and others. </p>
-                    
-                            <p> Apart from working with Red Hat as a GitOps product lead, I also hold below positions in OpenSource communities</p>
-                                <p>  - Maintainer of Argo CD Operator</p>
-                                    <p> - Creator of Argo Rollouts Manager</p>
-                                        <p> - Maintainer of RedHat Developer (GitOps operator)</p>
-                                            <p> - Member of Argo Project</p>
-                                                <p> - Member of Argo SIG Security</p>
-                    
-                                                    <p> If you want to learn complete devops for free with practical projects, checkout the playlist</p>
-                                                        <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa"> Playlists</a></p>
-                    
-                                                            <p> Please subscribe to the channel to keep learning and growing together. Thanks :)</p>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; Abhishek.Veeramalla</p>
-        </footer>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store | About</title>
+  <style>
+    :root { --bg:#fff; --surface:#fefefe; --text:#2b2b2b; --muted:#555; --primary:#2c6fbb; }
+    * { box-sizing:border-box; }
+    body { margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#f0f3f7;color:var(--text); }
+    header, footer{background:var(--primary);color:#fff;}
+    header{padding:14px 16px;}
+    footer{padding:12px 16px;text-align:center;font-size:.9rem;}
+    nav{display:flex;justify-content:center;gap:12px;}
+    nav a{color:#fff;text-decoration:none;padding:6px 10px;border-radius:5px;}
+    nav a:hover{background:rgba(255,255,255,.18);}
+    main{width:min(93%,900px);margin:20px auto;}
+    section{background:var(--surface);border-radius:10px;padding:20px;border:1px solid #e6e9ef;box-shadow:0 2px 8px rgba(25,35,55,.06);}
+    h1{margin-top:0;}
+    p{line-height:1.65;color:var(--muted);}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/books">Books</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/courses">Courses</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>About this place</h1>
+      <p>Hi, I’m the person behind this tiny bookstore. I like whiskey-bent plots, helpful non-fiction, and internet projects that don’t overpromise.</p>
+      <p>I made this site to share books I’ve actually read, with short notes, not a huge corporate catalog. If you have suggestions, drop a note through Contact.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Book Store</p>
+  </footer>
+</body>
 </html>

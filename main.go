@@ -11,8 +11,13 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 }
 
 func coursePage(w http.ResponseWriter, r *http.Request) {
-	// Render the course html page
+	// Render the courses html page (legacy content)
 	http.ServeFile(w, r, "static/courses.html")
+}
+
+func booksPage(w http.ResponseWriter, r *http.Request) {
+	// Render the books html page
+	http.ServeFile(w, r, "static/books.html")
 }
 
 func aboutPage(w http.ResponseWriter, r *http.Request) {
@@ -27,8 +32,12 @@ func contactPage(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
+	http.HandleFunc("/", homePage)
 	http.HandleFunc("/home", homePage)
+	http.HandleFunc("/index", homePage)
+	http.HandleFunc("/books", booksPage)
 	http.HandleFunc("/courses", coursePage)
+	http.HandleFunc("/course", coursePage)
 	http.HandleFunc("/about", aboutPage)
 	http.HandleFunc("/contact", contactPage)
 

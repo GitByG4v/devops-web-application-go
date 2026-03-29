@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store | Books</title>
+  <style>
+    :root { --bg:#fff; --surface:#fefefe; --text:#2b2b2b; --muted:#555; --primary:#2c6fbb; --accent:#c27f37; }
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#f0f3f7;color:var(--text);}
+    header, footer{background:var(--primary);color:#fff;}
+    header{padding:14px 16px;}
+    footer{padding:12px 16px;text-align:center;font-size:.9rem;}
+    nav{display:flex;justify-content:center;gap:12px;}
+    nav a{color:#fff;text-decoration:none;padding:6px 10px;border-radius:5px;}
+    nav a:hover{background:rgba(255,255,255,.18);}
+    main{width:min(93%,990px);margin:20px auto;}
+    h1{margin-bottom:8px;}
+    p{color:var(--muted);line-height:1.6;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
+    .card{background:var(--surface);border:1px solid #e6e9ef;border-radius:10px;padding:14px;box-shadow:0 2px 8px rgba(25,35,55,.08);}
+    .card h3{margin-top:0;margin-bottom:6px;color:var(--primary);}
+    .card p{margin:.3rem 0;color:var(--muted);}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/books">Books</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/courses">Courses</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Books I’d Recommend to a Friend</h1>
+    <p>It started with my own table of books, then I thought I’d share it. No algorithms, just my own favorites.</p>
+    <div class="grid">
+      <article class="card"><h3>Clean Code</h3><p>Author: Robert C. Martin</p><p>Category: Software (great for developers who care about craftsmanship)</p></article>
+      <article class="card"><h3>Atomic Habits</h3><p>Author: James Clear</p><p>Category: Personal Growth (small changes, big results)</p></article>
+      <article class="card"><h3>1984</h3><p>Author: George Orwell</p><p>Category: Fiction (classic, still gives you chills)</p></article>
+      <article class="card"><h3>The Lean Startup</h3><p>Author: Eric Ries</p><p>Category: Business (for people building something from scratch)</p></article>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2026 Book Store</p>
+  </footer>
+</body>
+</html>
